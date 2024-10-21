@@ -1,6 +1,8 @@
 # alias
 alias ll='ls --color=auto -alF'
 
+HISTFILESIZE=10000000
+HISTSIZE=10000000
 
 # Simple PS1 for non git repo
 PS1='$([ $? == 0 ] && echo \[\e[92m\]✔\[\e[0m\] || echo \[\e[91m\]✘$? \[\e[0m\] ) \t \[\e[92m\]\w\[\e[0m\] \$ '

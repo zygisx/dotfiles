@@ -17,3 +17,20 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[branch]
+    autosetuprebase = always
+[branch "master"]
+    rebase = true
+[rebase]
+    stat = true
+[push]
+    default = current
+[web]
+    browser = open
+[core]
+    excludesfile = ~/.gitignore

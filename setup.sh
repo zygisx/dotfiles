@@ -9,3 +9,5 @@ ln -s $(pwd)/.gitconfig ~/.gitconfig
 rm ~/.bashrc_productivity
 ln -s $(pwd)/.bashrc_productivity ~/.bashrc_productivity
 
+rm ~/.inputrc
+ln -s $(pwd)/.inputrc ~/.inputrc
