@@ -21,3 +21,8 @@ fi
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 
 PS1='$(kube_ps1)'$PS1
+
+# Docker stuff
+alias dckr-stop-all='docker stop $(docker ps -q)'
+
+source ~/.pr_create.sh
