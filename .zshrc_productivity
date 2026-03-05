@@ -5,6 +5,10 @@ alias ll='ls --color=auto -alF'
 HISTSIZE=10000000
 SAVEHIST=10000000
 HISTFILE=~/.zsh_history
+setopt INC_APPEND_HISTORY   # write to history immediately, not on shell exit
+setopt SHARE_HISTORY        # share history across all sessions in real-time
+
+eval "$(atuin init zsh --disable-up-arrow)"
 
 # Prompt with status indicator and timestamp
 #PROMPT='%(?.%F{green}✔%f.%F{red}✘%?%f) %* %F{green}%~%f $ '
@@ -14,7 +18,7 @@ HISTFILE=~/.zsh_history
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 
 # Add kube_ps1 to prompt (prepend it)
-PROMPT='$(kube_ps1)'"$PROMPT"
+# PROMPT='$(kube_ps1)'"$PROMPT"
 
 # Docker stuff
 alias dckr-stop-all='docker stop $(docker ps -q)'
